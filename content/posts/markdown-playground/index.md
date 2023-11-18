@@ -124,6 +124,8 @@ input[type='input'] {
   width: auto;
   margin: 0 auto;
   display: block;
+          box-shadow: 0 10px 30px -10px var(--navy-shadow);
+
 }
 
 .row-12 > [class*='spans'] {

@@ -192,10 +192,11 @@ const StyledProject = styled.li`
 
     li {
       margin: 0 20px 5px 0;
-      color: var(--light-slate);
+      color: var(--lightest-slate);
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
       white-space: nowrap;
+      background-color: #233554;
     }
 
     @media (max-width: 768px) {
@@ -256,7 +257,7 @@ const StyledProject = styled.li`
     a {
       width: 100%;
       height: 100%;
-      background-color: var(--green);
+      /* background-color: var(--green); */
       border-radius: var(--border-radius);
       vertical-align: middle;
 
@@ -283,7 +284,7 @@ const StyledProject = styled.li`
         bottom: 0;
         z-index: 3;
         transition: var(--transition);
-        background-color: var(--navy);
+        /* background-color: var(--navy); */
         mix-blend-mode: screen;
       }
     }
@@ -292,12 +293,15 @@ const StyledProject = styled.li`
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
       filter: grayscale(100%) contrast(1) brightness(90%);
+      transition: var(--transition);
 
       @media (max-width: 768px) {
         object-fit: cover;
         width: auto;
         height: 100%;
         filter: grayscale(100%) contrast(1) brightness(50%);
+        transition: var(--transition);
+
       }
     }
   }
@@ -347,7 +351,7 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        What I've Done
+        <span style={{ color: '#EC799F' }}>What&nbsp;</span>I've Done
       </h2>
 
       <StyledProjectsGrid>

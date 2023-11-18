@@ -1,27 +1,19 @@
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
+  email: 'doelgern@gmail.com',
 
   socialMedia: [
-    {
-      name: 'GitHub',
-      url: 'https://github.com/bchiang7',
-    },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
-    },
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/bchiang7',
     },
     {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
+      name: 'GitHub',
+      url: 'https://github.com/bchiang7',
     },
+    // {
+    //   name: 'Mail',
+    //   url: 'mailto:doelgern@gmail.com',
+    // },
   ],
 
   navLinks: [
@@ -30,12 +22,12 @@ module.exports = {
       url: '/#about',
     },
     {
-      name: 'What',
+      name: 'Where',
       url: '/#jobs',
     },
     {
-      name: 'Where',
-      url: '/#projects',
+      name: 'What',
+      url: '/#experience',
     },
     // {
     //   name: '',
@@ -44,9 +36,9 @@ module.exports = {
   ],
 
   colors: {
-    green: '#64ffda',
-    navy: '#0a192f',
-    darkNavy: '#020c1b',
+    green: '#EC799F',
+    navy: '#F64B4E',
+    darkNavy: '#EC799F',
   },
 
   srConfig: (delay = 200, viewFactor = 0.25) => ({

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const IconLoader = () => (
-  <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <div>
     <title>Loader Logo</title>
     <g>
       <g id="B" transform="translate(11.000000, 5.000000)">
@@ -21,9 +21,30 @@ const IconLoader = () => (
                   L 50, 95
                   L 89, 73
                   L 89, 28 z"
+        style={{ animation: 'lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite' }}
       />
     </g>
-  </svg>
+    <style>
+      {`
+        @keyframes lds-circle {
+          0%, 100% {
+            animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+          }
+          0% {
+            transform: rotateY(0deg);
+          }
+          50% {
+            transform: rotateY(1800deg);
+            animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+          }
+          100% {
+            transform: rotateY(3600deg);
+          }
+        }
+      `}
+    </style>
+  </div>
 );
+
 
 export default IconLoader;

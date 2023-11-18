@@ -39,7 +39,7 @@ const StyledText = styled.div`
         content: '▹';
         position: absolute;
         left: 0;
-        color: var(--green);
+        /* color: var(--green); */
         font-size: var(--fz-sm);
         line-height: 12px;
       }
@@ -81,8 +81,8 @@ const StyledPic = styled.div`
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
+      /* mix-blend-mode: multiply; */
+      filter: grayscale(100%) contrast(1); 
       transition: var(--transition);
     }
 
@@ -129,7 +129,7 @@ const About = () => {
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
-      <h2 className="numbered-heading">Who I Am</h2>
+      <h2 className="numbered-heading"><span style={{ color: '#EC799F' }}>Who&nbsp;</span>I Am</h2>
 
       <div className="inner">
         <StyledText>

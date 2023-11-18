@@ -23,6 +23,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               slug
+              android
             }
           }
         }

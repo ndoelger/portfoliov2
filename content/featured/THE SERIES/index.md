@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'THE SERIES NY'
-cover: './halcyon.png'
+cover: './theseriesny.com_.png'
 # github: 'https://github.com/bchiang7/halcyon-site'
 external: 'https://theseriesny.com/'
 tech:

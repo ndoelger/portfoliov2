@@ -120,6 +120,7 @@ const StyledHighlight = styled.div`
     height: 2px;
     margin-left: 50px;
     transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
+    display: none;
   }
   @media (max-width: 480px) {
     margin-left: 25px;
@@ -175,10 +176,13 @@ const Jobs = () => {
           node {
             frontmatter {
               title
+              title2
               company
-              location
               range
+              range2
               url
+              company2
+              repeat
             }
             html
           }
@@ -244,7 +248,7 @@ const Jobs = () => {
 
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Where I've Been</h2>
+      <h2 className="numbered-heading"><span style={{ color: '#EC799F' }}>Where&nbsp;</span>I've Been</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
@@ -273,7 +277,7 @@ const Jobs = () => {
           {jobsData &&
             jobsData.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const { title, url, company, range, company2, repeat, range2, title2 } = frontmatter;
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
@@ -289,14 +293,50 @@ const Jobs = () => {
                       <span className="company">
                         &nbsp;@&nbsp;
                         <a href={url} className="inline-link">
-                          {company}
+                          {company2 ? company2 : company}
                         </a>
                       </span>
                     </h3>
-
                     <p className="range">{range}</p>
 
                     <div dangerouslySetInnerHTML={{ __html: html }} />
+
+                    {repeat ? (
+                      <>
+                        <h3 style={{ 'padding-top': '10px' }}>
+                          <span>{title2}</span>
+                          <span className="company">
+                            &nbsp;@&nbsp;
+                            <a href={url} className="inline-link">
+                              {company2 ? company2 : company}
+                            </a>
+                          </span>
+                        </h3>
+
+                        <p className="range">{range2}</p>
+                        {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
+                        <ul>
+                          <li>
+                            Executed and managed marketing campaigns utilizing data-driven
+                            strategies, incorporating insights gained from SQL data analysis and
+                            tools like Google Analytics and SEO techniques to optimize audience
+                            targeting and messaging
+                          </li>
+                          <li>
+                            Employed content management systems (CMS) such as WordPress to update
+                            and manage website content, resulting in a 20% increase in organic
+                            search visibility
+                          </li>
+                          <li>
+                            Analyzed heatmap and user behavior tools like Hotjar to gain insights
+                            into user behavior on the website, leading to informed design decisions
+                            and a 50% improvement in overall user satisfaction scores
+                          </li>
+                        </ul>
+                      </>
+                    ) : (
+                      ''
+                    )}
                   </StyledTabPanel>
                 </CSSTransition>
               );

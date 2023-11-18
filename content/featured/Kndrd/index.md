@@ -1,7 +1,7 @@
 ---
 date: '2'
 title: 'Kndrd'
-cover: './demo.png'
+cover: './www.kndrd.com_.png'
 # github: 'https://github.com/bchiang7/spotify-profile'
 external: 'https://spotify-profile.herokuapp.com/'
 tech:
