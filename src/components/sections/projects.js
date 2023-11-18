@@ -153,7 +153,7 @@ const StyledProject = styled.li`
     margin: 20px 0 0 0;
     list-style: none;
     li {
-      background-color: #233554;
+      /* background-color: #233554; */
       font-family: var(--font-mono);
       font-size: var(--fz-xxs);
       line-height: 1.75;
