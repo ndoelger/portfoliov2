@@ -1,7 +1,7 @@
 ---
 date: '2020-03-27'
 title: 'Spotify Stats'
-github: ''
+github: 'https://github.com/ndoelger/spotify-recap-v2'
 external: 'https://yourspotifystats-039c385e1540.herokuapp.com/'
 tech:
   - React

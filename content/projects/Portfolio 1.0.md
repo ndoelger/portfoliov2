@@ -1,8 +1,8 @@
 ---
 date: '2019-07-15'
 title: 'Portfolio 1.0'
-github: 'https://github.com/bchiang7/octoprofile'
-external: 'https://octoprofile.now.sh'
+# github: 'https://www.nicdoelger.work/'
+external: 'https://www.nicdoelger.work/'
 tech:
   - HTML
   - CSS

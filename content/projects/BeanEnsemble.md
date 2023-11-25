@@ -1,14 +1,14 @@
 ---
-date: '2019-11-12'
-title: 'BeanEnsemble'
-github: ''
-external: 'https://medium.com/stories-from-upstatement/building-a-headless-mobile-app-cms-from-scratch-bab2d17744d9'
+date: "2019-11-12"
+title: "BeanEnsemble"
+github: "https://github.com/ndoelger/prompt-swap"
+external: "https://bean-ensemble.online/"
 tech:
   - React
   - Tailwind CSS
   - Node.js
   - JavaScript
-company: 'BeanEnsemble'
+company: "BeanEnsemble"
 showInProjects: true
 ---
 

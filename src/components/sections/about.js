@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['HTML', 'CSS', 'JavaScript', 'Python', 'SQL', 'React', 'MongoDB', 'Node.js', 'Express', 'Adobe Suite/Figma' ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -163,6 +163,7 @@ const About = () => {
             </p> */}
 
             <p>Here are a few technologies I’ve been working with recently:</p>
+            {/* <Skills /> */}
           </div>
 
           <ul className="skills-list">

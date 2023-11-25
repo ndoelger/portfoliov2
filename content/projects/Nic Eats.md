@@ -1,8 +1,8 @@
 ---
 date: '2020-01-10'
 title: 'Nic Eats'
-github: 'https://github.com/bchiang7/time-to-have-more-fun'
-external: 'https://time-to-have-more-fun.now.sh/'
+github: 'https://github.com/ndoelger/nic-eats-v2'
+external: 'https://nic-eats-f19d8b609888.herokuapp.com/'
 tech:
   - MongoDB
   - Express

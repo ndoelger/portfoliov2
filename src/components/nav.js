@@ -210,7 +210,7 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+    <a className="resume-button" href="https://acrobat.adobe.com/id/urn:aaid:sc:us:f5243925-2060-404c-8686-c122d03dc21e" target="_blank" rel="noopener noreferrer">
       Resume
     </a>
   );

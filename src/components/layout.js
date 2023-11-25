@@ -58,7 +58,7 @@ const Layout = ({ children, location }) => {
             Skip to Content
           </a>
 
-        (
+        
           <StyledContent>
             <Nav isHome={isHome} />
             <Social isHome={isHome} />
@@ -69,7 +69,7 @@ const Layout = ({ children, location }) => {
               <Footer />
             </div>
           </StyledContent>
-          )
+          
         </ThemeProvider>
       </div>
     </>
