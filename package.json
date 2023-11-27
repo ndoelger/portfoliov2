@@ -1,8 +1,8 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "portfolio",
+  "description": "Nic Doelger's Portfolio",
   "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "Nic Doelger <doelgern@gmail.com>",
   "keywords": [
     "gatsby"
   ],
@@ -63,6 +63,7 @@
     "eslint-plugin-react": "^7.33.2",
     "gatsby-remark-code-titles": "^1.1.0",
     "husky": "^8.0.3",
-    "lint-staged": "^15.1.0"
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.1.0"
   }
 }
