@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: #28292C;
+  background-color: #28292c;
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -25,16 +25,13 @@ const StyledHeader = styled.header`
   transition: var(--transition);
   box-shadow: 0 10px 30px -10px var(--navy-shadow);
 
-
   @media (max-width: 1080px) {
     padding: 0 40px;
     box-shadow: 0 10px 30px -10px var(--navy-shadow);
-
   }
   @media (max-width: 768px) {
     padding: 0 25px;
     box-shadow: 0 10px 30px -10px var(--navy-shadow);
-
   }
 
   @media (prefers-reduced-motion: no-preference) {
@@ -139,7 +136,7 @@ const StyledLinks = styled.div`
         padding: 10px;
 
         &:before {
-          content: '0' counter(item) '.';
+          content: "0" counter(item) ".";
           margin-right: 5px;
           color: var(--green);
           font-size: var(--fz-xxs);
@@ -191,18 +188,14 @@ const Nav = ({ isHome }) => {
     <div className="logo" tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
-          <div className="hex-container">
-            {/* <IconHex /> */}
-          </div>
+          <div className="hex-container">{/* <IconHex /> */}</div>
           <div className="logo-container">
             <IconLogo />
           </div>
         </a>
       ) : (
         <Link to="/" aria-label="home">
-          <div className="hex-container">
-            {/* <IconHex /> */}
-          </div>
+          <div className="hex-container">{/* <IconHex /> */}</div>
           <div className="logo-container">
             <IconLogo />
           </div>
@@ -212,13 +205,21 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="https://acrobat.adobe.com/id/urn:aaid:sc:us:f5243925-2060-404c-8686-c122d03dc21e" target="_blank" rel="noopener noreferrer">
+    <a
+      className="resume-button"
+      href="https://acrobat.adobe.com/id/urn:aaid:sc:US:2992d7ae-42f2-404c-91a5-3e85fdae45eb"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       Resume
     </a>
   );
 
   return (
-    <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
+    <StyledHeader
+      scrollDirection={scrollDirection}
+      scrolledToTop={scrolledToTop}
+    >
       <StyledNav>
         {prefersReducedMotion ? (
           <>
@@ -254,8 +255,17 @@ const Nav = ({ isHome }) => {
                   {isMounted &&
                     navLinks &&
                     navLinks.map(({ url, name }, i) => (
-                      <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
-                        <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
+                      <CSSTransition
+                        key={i}
+                        classNames={fadeDownClass}
+                        timeout={timeout}
+                      >
+                        <li
+                          key={i}
+                          style={{
+                            transitionDelay: `${isHome ? i * 100 : 0}ms`,
+                          }}
+                        >
                           <Link to={url}>{name}</Link>
                         </li>
                       </CSSTransition>
@@ -266,7 +276,13 @@ const Nav = ({ isHome }) => {
               <TransitionGroup component={null}>
                 {isMounted && (
                   <CSSTransition classNames={fadeDownClass} timeout={timeout}>
-                    <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
+                    <div
+                      style={{
+                        transitionDelay: `${
+                          isHome ? navLinks.length * 100 : 0
+                        }ms`,
+                      }}
+                    >
                       {ResumeLink}
                     </div>
                   </CSSTransition>
