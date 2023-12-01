@@ -7,7 +7,7 @@ company: "COCO"
 company2: "Community & Content"
 location: "New York, NY"
 range2: "August 2019 & February 2020"
-range: "February 2020 & May 2021"
+range: "February 2020 & May 2022"
 url: "https://www.communityandcontent.com/"
 ---
 
