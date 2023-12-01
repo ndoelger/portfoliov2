@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '3'
 title: 'Prompt Swap'
 cover: './demo.png'
 github: 'https://github.com/ndoelger/prompt-swap'
