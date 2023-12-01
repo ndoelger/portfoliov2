@@ -1,4 +1,4 @@
 [build]
-  command = "gatsby build and public"
+  command = "gatsby build"
   publish = "public"
   node_version = "18"
