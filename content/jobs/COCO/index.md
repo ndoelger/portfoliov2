@@ -11,6 +11,6 @@ range: "February 2020 & May 2022"
 url: "https://www.communityandcontent.com/"
 ---
 
-- Engineer and optimize frontend components using modern technologies like React.js, HTML5, CSS3, and JavaScript to deliver a visual appealing and intuitive user interface resulting in a 20% improvement in page load times and a 15% increase in conversion rates
-- Implement responsive and user-friendly UI/UX designs, ensuring seamless shopping experiences across desktop and mobile platforms, leading to a 25% increase in mobile sales
-- Collaborate with backend developers to integrate and optimize e-commerce functionalities and API endpoints such as payment processing, inventory management, and order fulfillment, resulting in a seamless and efficient shopping experience for customers
+- Leveraged HTML5, CSS3, and JavaScript to develop custom interactive features, enhancing the overall user experience and driving a 30% increase in website engagement
+- Designed engaging assets with Adobe Creative Suite, incorporating Bootstrap, Tailwind CSS, SaaS, and jQuery for interactive elements, resulting in a 25% increase in user engagement
+- Utilized Adobe XD and Figma for prototyping, coupled with React and Git for web development, and integrated animation and interaction libraries like GSAP to craft dynamic and immersive digital experiences
