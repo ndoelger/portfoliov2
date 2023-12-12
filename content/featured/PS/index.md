@@ -1,16 +1,15 @@
 ---
 date: '3'
-title: 'Prompt Swap'
+title: 'Bottomless Closet'
 cover: './demo.png'
-github: 'https://github.com/ndoelger/prompt-swap'
-external: 'https://prompt-swap.vercel.app/'
+github: 'https://github.com/ndoelger/bottomlesscloset'
+external: 'https://main.d415obh25yr7h.amplifyapp.com/'
 tech:
+  - PostgreSQL
   - Next.js
-  - NextAuth
-  - React
-  - Redux
-  - Node
-  - Tailwind CSS
+  - Tawilind CSS
+  - daisyUI
+  - Typescript
 ---
 
-Discover and share AI-Powered prompts to ignite engaging conversations, inspire creativity, and foster collaborative thinking.
+A redesign of Bottomless Closet, a non-profit that empowers New York City women in need to enter the workforce and achieve success

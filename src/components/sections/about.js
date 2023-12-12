@@ -36,7 +36,7 @@ const StyledText = styled.div`
       font-size: var(--fz-xs);
 
       &:before {
-        content: '▹';
+        content: "▹";
         position: absolute;
         left: 0;
         /* color: var(--green); */
@@ -82,13 +82,13 @@ const StyledPic = styled.div`
       position: relative;
       border-radius: var(--border-radius);
       /* mix-blend-mode: multiply; */
-      filter: grayscale(100%) contrast(1); 
+      filter: grayscale(100%) contrast(1);
       transition: var(--transition);
     }
 
     &:before,
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 100%;
@@ -125,21 +125,35 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['HTML', 'CSS', 'JavaScript', 'Python', 'SQL', 'React', 'MongoDB', 'Node.js', 'Express', 'Adobe Suite/Figma' ];
+  const skills = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'Python',
+    'SQL',
+    'React',
+    'MongoDB',
+    'Node.js',
+    'Express',
+    'Adobe Suite/Figma',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
-      <h2 className="numbered-heading"><span style={{ color: '#EC799F' }}>Who&nbsp;</span>I Am</h2>
+      <h2 className="numbered-heading">
+        <span style={{ color: '#EC799F' }}>Who&nbsp;</span>I Am
+      </h2>
 
       <div className="inner">
         <StyledText>
           <div>
             <p>
-              Imagine if software had a personality – that's what I bring to the table. A mix of
-              innovation, aesthetics, and a dash of breaking the mold. I see coding as my
-              paintbrush, and technology as my canvas to create digital art that matters. Solving
-              problems? That's just the warm-up. I'm all about turning challenges into
-              opportunities, and writing code that doesn't just work, but wows.
+              Imagine if software had a personality – that's what I bring to the
+              table. A mix of innovation, aesthetics, and a dash of breaking the
+              mold. I see coding as my paintbrush, and technology as my canvas
+              to create digital art that matters. Solving problems? That's just
+              the warm-up. I'm all about turning challenges into opportunities,
+              and writing code that doesn't just work, but wows.
             </p>
 
             {/* <p>
@@ -162,7 +176,10 @@ const About = () => {
               &amp; React.
             </p> */}
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>
+              Currently in freelance mode! Here are a few technologies I’ve been
+              working with recently:
+            </p>
             {/* <Skills /> */}
           </div>
 
