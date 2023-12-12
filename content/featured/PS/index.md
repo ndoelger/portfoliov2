@@ -7,7 +7,7 @@ external: "https://main.d415obh25yr7h.amplifyapp.com/"
 tech:
   - PostgreSQL
   - Next.js
-  - Tawilind CSS
+  - Tailwind CSS
   - daisyUI
   - Typescript
   - Sequelize
